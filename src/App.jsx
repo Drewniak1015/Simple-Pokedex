@@ -83,7 +83,7 @@ const App = () => {
           }
         />
         <Route
-          path="/"
+          path="/Simple-Pokedex"
           element={
             <>
               <SearchBar

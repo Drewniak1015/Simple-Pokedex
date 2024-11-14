@@ -41,7 +41,6 @@ const App = () => {
       );
 
       const pokemonDataArray = await Promise.all(pokemonPromises);
-      console.log(pokemonDataArray);
       const new_data = pokemonDataArray.map((pokemonData) => ({
         id: pokemonData.id,
         img: pokemonData.sprites.front_default,

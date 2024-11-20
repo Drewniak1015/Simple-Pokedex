@@ -3,6 +3,7 @@ import "./font.css";
 import Cards from "./components/Cards";
 import Pagination from "./components/Pagination";
 import { Routes, Route } from "react-router-dom";
+
 import Test from "./components/Test";
 import SearchBar from "./components/SearchBar";
 
@@ -83,7 +84,7 @@ const App = () => {
           }
         />
         <Route
-          path="/Simple-Pokedex"
+          path="/"
           element={
             <>
               <SearchBar

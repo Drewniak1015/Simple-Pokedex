@@ -6,7 +6,7 @@ const Cards = ({ PokemonInfo, SetInvidualPokemon }) => {
     <div className="cards flex items-center justify-center flex-wrap gap-8 mx-4 my-4">
       {PokemonInfo.length > 0 ? (
         PokemonInfo.map((element) => (
-          <Link to={`/pokemon/${element.name}`} key={element.id}>
+          <Link to={`/pokemon/${element.id}`}>
             <div
               className="card shadow-lg w-44 h-44 rounded-lg flex flex-col hover:scale-110 cursor-pointer duration-500 border-b-black border-solid border-2"
               onClick={() => {

@@ -1,5 +1,6 @@
 import React from "react";
 import { Link, useParams } from "react-router-dom";
+
 const Test = ({ PokemonInfo, invidualPokemon }) => {
   const { id } = useParams();
   return (
@@ -40,7 +41,7 @@ const Test = ({ PokemonInfo, invidualPokemon }) => {
       </div>
       <div className="flex justify-center m-16">
         {" "}
-        <Link to={"/Simple-Pokedex"}>
+        <Link to="/">
           <button className="border-emerald-400 border-solid border-4 bg-white rounded-xl shadow-lg h-20 w-40 text-black hover:bg-emerald-400 ease-linear text-xl">
             Back
           </button>{" "}

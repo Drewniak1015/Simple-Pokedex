@@ -1,8 +1,33 @@
-# React + Vite
+# Pokédex App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplikacja Pokédex, która umożliwia wyszukiwanie Pokémonów z wykorzystaniem oficjalnego API Pokémon (PokeAPI). Dzięki tej aplikacji możesz łatwo przeszukiwać bazę danych Pokémonów, sprawdzać ich szczegóły i statystyki.
 
-Currently, two official plugins are available:
+## Funkcje
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Wyszukiwanie Pokémonów po nazwie lub numerze.
+- Responsywny interfejs dostosowujący się do różnych rozdzielczości ekranu.
+- Łatwa w obsłudze aplikacja z prostym procesem wyszukiwania.
+
+## Technologie
+
+- React
+- PokeAPI (https://pokeapi.co/)
+- TailWind
+
+## Instalacja
+
+1. Sklonuj repozytorium:
+   ```bash
+   git clone https://github.com/twoje-repo/pokedex-app.git
+2.   Zainstaluj zależności:
+   ```bash
+   npm install
+3. Uruchom aplikację:
+   ```bash
+   npm start
+
+  
+
+
+
+

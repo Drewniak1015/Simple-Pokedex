@@ -7,7 +7,9 @@ Aplikacja Pokédex, która umożliwia wyszukiwanie Pokémonów z wykorzystaniem 
 - Wyszukiwanie Pokémonów po nazwie lub numerze.
 - Responsywny interfejs dostosowujący się do różnych rozdzielczości ekranu.
 - Łatwa w obsłudze aplikacja z prostym procesem wyszukiwania.
+## Demo
 
+Możesz zobaczyć działającą wersję aplikacji na żywo pod tym [linkiem](https://drewniak1015.github.io/Simple-Pokedex/).
 ## Technologie
 
 - React

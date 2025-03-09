@@ -3,7 +3,6 @@ import "./font.css";
 import Cards from "./components/Cards";
 import Pagination from "./components/Pagination";
 import { Routes, Route } from "react-router-dom";
-
 import Test from "./components/Test";
 import SearchBar from "./components/SearchBar";
 
@@ -14,11 +13,6 @@ const App = () => {
     next: null,
   });
 
-  const [invidualPokemon, SetInvidualPokemon] = useState({
-    id: 1,
-    name: "bulbasaur",
-    img: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png",
-  });
   const [PokemonPagination, setPokemonPagination] = useState(
     "https://pokeapi.co/api/v2/pokemon?limit=100&offset=0"
   );
@@ -32,7 +26,7 @@ const App = () => {
     try {
       const response = await fetch(PokemonPagination);
       if (!response.ok) {
-        throw new Error("could not fetch resource");
+        throw new Error("Nie udało się pobrać danych");
       }
 
       const data = await response.json();
@@ -46,7 +40,6 @@ const App = () => {
         id: pokemonData.id,
         img: pokemonData.sprites.front_default,
         name: pokemonData.name,
-
         types: pokemonData.types.map((typeInfo) => typeInfo.type.name),
       }));
 
@@ -74,15 +67,7 @@ const App = () => {
       <h1 className="text-4xl my-4 text-center font-extrabold">Pokedex</h1>
 
       <Routes>
-        <Route
-          path="/pokemon/:id"
-          element={
-            <Test
-              PokemonInfo={PokemonData.pokemons}
-              invidualPokemon={invidualPokemon}
-            />
-          }
-        />
+        <Route path="/pokemon/:id" element={<Test />} />
         <Route
           path="/"
           element={
@@ -91,14 +76,7 @@ const App = () => {
                 setSearchTerm={setSearchTerm}
                 searchTerm={searchTerm}
               />
-              <Cards
-                PokemonInfo={filteredPokemons}
-                SetInvidualPokemon={SetInvidualPokemon}
-                word={filteredPokemons.map((pokemon) =>
-                  pokemon.name.toLowerCase()
-                )}
-                PokemonData={PokemonData.pokemons}
-              />
+              <Cards PokemonInfo={filteredPokemons} />
               <Pagination
                 setPokemonPagination={setPokemonPagination}
                 previous={PokemonData.previous}

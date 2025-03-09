@@ -20,9 +20,14 @@ Aplikacja Pokédex, która umożliwia wyszukiwanie Pokémonów z wykorzystaniem 
 ```bash
 git clone https://github.com/twoje-repo/pokedex-app.git
 
+
+
 2.Zainstaluj zależności:
 ```bash
 npm install
+
+
+
 
 3.Uruchom aplikację:
 ```bash
